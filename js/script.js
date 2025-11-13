@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="todo-item__actions">
                     <button class="btn btn-complete">
-                        ${todo.status === 'pending' ? 'Selesai' : 'Batal'}
+                        ${todo.status === 'pending' ? 'Finish' : 'Batal'}
                     </button>
                     <button class="btn btn-delete">Delete</button>
                 </div>
