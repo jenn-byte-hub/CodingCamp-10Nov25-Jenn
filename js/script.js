@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleDeleteAll() {
-        if (confirm('Are you sure that ypu want to delete ALL task?')) {
+        if (confirm('Are you sure that you want to delete ALL task?')) {
             todos = [];
             saveTodos();
             renderTodos();
