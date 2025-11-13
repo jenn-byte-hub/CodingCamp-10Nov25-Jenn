@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>To Do List App</h1>
+        </header>
+
+        <main>
+            <section class="form-section card">
+                <form id ="todo-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="todo-input">New Todo Item:</label>
+                            <input type="text" id="todo-input" placeholder="Enter a new todo item">
+                        </div>
+                        <div class="form-group">
+                            <label for="todo-date">Due date</label>
+                            <input type="date" id="todo-date" placeholder="Enter due date">
+                        </div>
+                        <button type="submit" class="btn btn-add">Add todo</button>
+                    </div>
+                    <p id="error-msg" class="error-text" style="display:none;"></p>
+    
+                </form>
+            </section>
+            <section class="card action-bar">
+                <button id="filter-btn" class="btn btn-filter">Filter: All</button>
+                <button id="delete-all-btn" class="btn btn-danger">Delete All</button>
+            </section>
+            <section class="card">
+                <h2>Your Todo Items</h2>
+                <ul id="todo-list"></ul>
+                <p id="no-task-msg" style="display:none;">No tasks available. Please add a task.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 To-Do List App</p>
+    </footer>
+    <script src="js\script.js"></script>
+</body>
+</html>
