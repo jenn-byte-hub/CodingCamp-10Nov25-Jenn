@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="todo-item__actions">
                     <button class="btn btn-complete">
-                        ${todo.status === 'pending' ? 'Finish' : 'Batal'}
+                        ${todo.status === 'pending' ? 'Finish' : 'Cancel'}
                     </button>
                     <button class="btn btn-delete">Delete</button>
                 </div>
@@ -143,4 +143,5 @@ document.addEventListener('DOMContentLoaded', () => {
     todoList.addEventListener('click', handleListClick);
 
     renderTodos();
+
 });
